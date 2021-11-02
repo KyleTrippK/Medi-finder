@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "718346502306",
+    "project_id": "medi-finder-d6bc6",
+    "storage_bucket": "medi-finder-d6bc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718346502306:android:180ce20168a4bd1a4c57fb",
+        "android_client_info": {
+          "package_name": "com.moringaschool.medi_finder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718346502306-dsuoilsh1otpm3oo6hgbr8o5ndvghttm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWICCqsQnO-FRTdy04C8lRYDtnqEF_NK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718346502306-dsuoilsh1otpm3oo6hgbr8o5ndvghttm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

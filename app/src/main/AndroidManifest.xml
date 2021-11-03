@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediFinder">
         <activity
+            android:name=".ui.SavedHospitalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HospitalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HospitalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CreateAccount"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

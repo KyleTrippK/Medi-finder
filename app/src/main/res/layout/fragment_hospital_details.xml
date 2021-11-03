@@ -35,7 +35,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:textSize="20sp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
@@ -59,6 +59,28 @@
                 android:layout_alignParentStart="true"
                 android:textColor="@color/black"
                 android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Working hours"
+                android:id="@+id/workingHoursTextView"
+                android:layout_below="@+id/categoryTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services Offered"
+                android:id="@+id/servicesOfferedTextView"
+                android:layout_below="@+id/workingHoursTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -72,7 +94,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_above="@+id/saveRestaurantButton"
+                android:layout_above="@+id/saveHospitalButton"
                 android:paddingLeft="30dp"
                 android:paddingTop="20dp"
                 android:paddingRight="30dp">

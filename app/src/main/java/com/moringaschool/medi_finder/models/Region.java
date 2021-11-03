@@ -1,5 +1,5 @@
 
-package com.moringaschool.medi_finder;
+package com.moringaschool.medi_finder.models;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;

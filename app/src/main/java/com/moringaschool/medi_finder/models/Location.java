@@ -1,5 +1,5 @@
 
-package com.moringaschool.medi_finder;
+package com.moringaschool.medi_finder.models;
 
 import java.util.List;
 import javax.annotation.Generated;

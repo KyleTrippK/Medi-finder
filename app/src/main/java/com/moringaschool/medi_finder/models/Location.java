@@ -1,6 +1,8 @@
 
 package com.moringaschool.medi_finder.models;
 
+import androidx.annotation.NonNull;
+
 import java.util.List;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
@@ -131,4 +133,9 @@ public class Location {
         this.displayAddress = displayAddress;
     }
 
+    @NonNull
+    @Override
+    public String toString() {
+        return String.format("%s, %s, %s %s", this.address1, this.city, this.state, this.zipCode);
+    }
 }

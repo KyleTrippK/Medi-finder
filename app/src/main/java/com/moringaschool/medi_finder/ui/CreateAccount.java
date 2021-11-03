@@ -51,6 +51,12 @@ public class CreateAccount extends AppCompatActivity {
 
 
         public void createUser(){
+            final String name = mNameEditText.getText().toString().trim();
+            final String email = mEmailEditText.getText().toString().trim();
+            String password = mPasswordEditText.getText().toString().trim();
+            String confirmPassword = mConfirmPasswordEditText.getText().toString().trim();
+
+
 
         }
     }

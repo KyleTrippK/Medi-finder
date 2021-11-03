@@ -1,5 +1,7 @@
 package com.moringaschool.medi_finder.ui;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -58,7 +60,7 @@ public class HospitalDetailsFragment extends Fragment implements View.OnClickLis
         assert getArguments()!= null;
         mHospital = Parcels.unwrap(getArguments().getParcelable("hospital"));
 
-        mSaveRestaurantButton.setOnClickListener(this);
+//        mSaveRestaurantButton.setOnClickListener(this);
 //        if (getArguments() != null) {
 //            mParam1 = getArguments().getString(ARG_PARAM1);
 //            mParam2 = getArguments().getString(ARG_PARAM2);
@@ -88,6 +90,29 @@ public class HospitalDetailsFragment extends Fragment implements View.OnClickLis
         mDistanceLabel.setText(Double.toString(mHospital.getDistance()));
         mAddressLabel.setText(mHospital.getLocation().toString());
 
-        return inflater.inflate(R.layout.fragment_hospital_details, container, false);
+        inflater.inflate(R.layout.fragment_hospital_details, container, false);
+
+        mWebsiteLabel.setOnClickListener(this);
+        mPhoneLabel.setOnClickListener(this);
+        mAddressLabel.setOnClickListener(this);
+
+        return view;
+    }
+
+    @Override
+    public void onClick(View v){
+        if(v==mWebsiteLabel) {
+            Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mHospital.getUrl()));
+            startActivity(webIntent);
+        }
+        if(v==mPhoneLabel) {
+            Intent phoneIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(mHospital.getPhone()));
+            startActivity(phoneIntent);
+        }
+        if(v==mAddressLabel) {
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:"+mHospital.getCoordinates().getLatitude() +","+mHospital.getCoordinates().getLongitude()+"?q=("+mHospital.getName() + ")"));
+            startActivity(mapIntent);
+        }
+
     }
 }

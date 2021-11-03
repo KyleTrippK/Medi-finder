@@ -11,6 +11,8 @@
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.253125" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.22735507246376813" />
+        <entry key="app/src/main/res/layout/activity_hospitals_details.xml" value="0.28020833333333334" />
+        <entry key="app/src/main/res/layout/fragment_hospital_details.xml" value="0.25" />
       </map>
     </option>
   </component>

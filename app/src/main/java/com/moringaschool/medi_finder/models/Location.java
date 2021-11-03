@@ -6,7 +6,10 @@ import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("jsonschema2pojo")
+import org.parceler.Parcel;
+
+//@Generated("jsonschema2pojo")
+@Parcel
 public class Location {
 
     @SerializedName("address1")

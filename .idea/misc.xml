@@ -9,6 +9,9 @@
         <entry key="app/src/main/res/drawable/ic_lock_open.xml" value="0.253125" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.253125" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/activity_hospital_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_hospital_list_adapter.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>

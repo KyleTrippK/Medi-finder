@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/ic_lock_open.xml" value="0.253125" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.253125" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>

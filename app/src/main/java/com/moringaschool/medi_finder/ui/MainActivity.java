@@ -1,8 +1,10 @@
-package com.moringaschool.medi_finder;
+package com.moringaschool.medi_finder.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.moringaschool.medi_finder.R;
 
 public class MainActivity extends AppCompatActivity {
 

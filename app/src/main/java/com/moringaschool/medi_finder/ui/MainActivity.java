@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.moringaschool.medi_finder.Constants;
 import com.moringaschool.medi_finder.R;
 
@@ -43,9 +45,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        mSearchedlocationReference = FirebaseDatabase
+                .getInstance()
+                .getReference()
+                .child(Constants.FIREBASE_CHILD_SEARCHED_LOCATION);
+
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mEditor = mSharedPreferences.edit();
+
         findHospital.setOnClickListener(this);
         saved.setOnClickListener(this);
-        mRecentHospital= mLocation.getText().toString().trim();
+//        mRecentHospital= mLocation.getText().toString().trim();
+        mRecentHospital= mSharedPreferences.getString(Constants.PREFERENCES_LOCATION_KEY,null);
 
 
     }

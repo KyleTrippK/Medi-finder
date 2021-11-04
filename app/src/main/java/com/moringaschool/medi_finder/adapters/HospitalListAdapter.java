@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.moringaschool.medi_finder.R;
 import com.moringaschool.medi_finder.models.Business;
 import com.moringaschool.medi_finder.ui.HospitalDetailsActivity;
+import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
 
@@ -64,6 +65,7 @@ public class HospitalListAdapter extends RecyclerView.Adapter<HospitalListAdapte
             mNameTextView.setText(hospital.getName());
             mCategoryTextView.setText(hospital.getCategories().get(0).getTitle());
             mRatingTextView.setText("Rating: " + hospital.getRating() + "/5");
+            Picasso.get().load(hospital.getImageUrl()).into(mHospitalImageView);
 
         }
 

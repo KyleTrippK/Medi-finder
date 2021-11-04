@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.moringaschool.medi_finder">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,6 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MediFinder">
+        <activity
+            android:name=".adapters.HospitalListAdapter"
+            android:exported="true" />
         <activity
             android:name=".ui.SavedHospitalsActivity"
             android:exported="false" />
@@ -22,7 +26,7 @@
             android:name=".ui.CreateAccount"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

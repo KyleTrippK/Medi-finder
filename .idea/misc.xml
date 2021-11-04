@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/layout/activity_hospital_list_adapter.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.1" />
       </map>
     </option>
   </component>

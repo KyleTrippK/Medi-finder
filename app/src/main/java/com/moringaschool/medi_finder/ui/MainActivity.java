@@ -76,6 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         }
+        if(v==saved){
+            Intent intent = new Intent(MainActivity.this,HospitalListActivity.class);
+            intent.putExtra("gender",mRecentHospital);
+            saveLocationToFirebase(mRecentHospital);
+            startActivity(intent);
+        }
     }
 
     public void saveLocationToFirebase( String locat){
